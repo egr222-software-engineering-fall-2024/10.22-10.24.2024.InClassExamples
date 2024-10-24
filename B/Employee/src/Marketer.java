@@ -1,4 +1,9 @@
+// A class to represent marketers
 public class Marketer extends Employee {
+    public Marketer(int years) {
+        super(years);
+    }
+
     @Override
     public double getSalary() {
         double baseSalary = super.getSalary();
@@ -6,6 +11,6 @@ public class Marketer extends Employee {
     }
 
     public void advertise() {
-        System.out.println("Act now while supplies last!");
+        System.out.println("Act now while supplies last");
     }
 }
